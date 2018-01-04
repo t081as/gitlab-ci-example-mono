@@ -15,10 +15,10 @@ release:
         paths:
           - ./build/release/
     script:
-        - msbuild "MyProject.sln" /p:Configuration="Release" /p:Platform="Any CPU" /p:OutputPath="./build/release/"
+        - msbuild "MyProject.sln" /p:Configuration="Release" /p:Platform="Any CPU" /p:OutputPath="./../../build/release/"
     
 debug:
     stage: test
     script:
-        - msbuild "MyProject.sln" /p:Configuration="Debug" /p:Platform="Any CPU" /p:OutputPath="./build/debug/"
+        - msbuild "MyProject.sln" /p:Configuration="Debug" /p:Platform="Any CPU" /p:OutputPath="./../../build/debug/"
         - mono packages/NUnit.ConsoleRunner.3.6.0/tools/nunit3-console.exe ./build/debug/MyProject.Test.dll
