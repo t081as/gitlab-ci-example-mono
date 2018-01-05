@@ -15,24 +15,28 @@
 image: mono:latest
 
 stages:
-    - test
-    - build
+  - test
+  - build
 
 before_script:
-    - nuget restore -NonInteractive
+  - nuget restore -NonInteractive
 
 release:
-    stage: build
-    only:
-        - master
-    artifacts:
-        paths:
-          - build/release/MyProject.exe
-    script:
-        - msbuild "MyProject.sln" /p:Configuration="Release" /p:Platform="Any CPU" /p:OutputPath="./../../build/release/" # The output path is relative to the position of the csproj-file
+  stage: build
+  only:
+    - master
+  artifacts:
+    paths:
+      - build/release/MyProject.exe
+  script:
+    # The output path is relative to the position of the csproj-file
+    - msbuild /p:Configuration="Release" /p:Platform="Any CPU"
+      /p:OutputPath="./../../build/release/" "MyProject.sln"
     
 debug:
-    stage: test
-    script:
-        - msbuild "MyProject.sln" /p:Configuration="Debug" /p:Platform="Any CPU" /p:OutputPath="./../../build/debug/" # The output path is relative to the position of the csproj-file
-        - mono packages/NUnit.ConsoleRunner.3.6.0/tools/nunit3-console.exe build/debug/MyProject.Test.dll
+  stage: test
+  script:
+    # The output path is relative to the position of the csproj-file
+    - msbuild /p:Configuration="Debug" /p:Platform="Any CPU"
+      /p:OutputPath="./../../build/debug/" "MyProject.sln"
+    - mono packages/NUnit.ConsoleRunner.3.6.0/tools/nunit3-console.exe build/debug/MyProject.Test.dll
