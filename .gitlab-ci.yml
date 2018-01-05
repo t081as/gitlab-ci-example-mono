@@ -20,7 +20,6 @@ stages:
 
 before_script:
     - nuget restore -NonInteractive
-    - nuget locals all -list
 
 release:
     stage: build
