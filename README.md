@@ -6,7 +6,7 @@
 
 ---
 
-This is a simple [gitlab continuous integration](https://about.gitlab.com/features/gitlab-ci-cd/) example project (compatible with the [shared runner](https://docs.gitlab.com/runner/) provided on [gitlab.com](https://gitlab.com)) using the official [mono docker image](https://hub.docker.com/_/mono/) to build a visual studio project.
+This is a simple [gitlab continuous integration](https://about.gitlab.com/features/gitlab-ci-cd/) example project (compatible with the [linux-based shared runners](https://docs.gitlab.com/runner/) provided on [gitlab.com](https://gitlab.com)) using the official [mono docker image](https://hub.docker.com/_/mono/) to build a visual studio project.
 
 Thanks to the [Tango Desktop Project](http://tango.freedesktop.org) for the repository icon.
 
