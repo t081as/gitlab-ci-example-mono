@@ -1,7 +1,7 @@
 ﻿#region MIT License
 // The MIT License (MIT)
 //
-// Copyright © 2018 Tobias Koch <t.koch@tk-software.de>
+// Copyright © 2018-2020 Tobias Koch <t.koch@tk-software.de>
 //
 // Permission is hereby granted, free of charge, to any person
 // obtaining a copy of this software and associated documentation
@@ -38,7 +38,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Tobias Koch")]
 [assembly: AssemblyProduct("MyProject.Test")]
-[assembly: AssemblyCopyright("Copyright ©  2018 Tobias Koch")]
+[assembly: AssemblyCopyright("Copyright ©  2018-2020 Tobias Koch")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

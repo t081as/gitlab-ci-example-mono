@@ -20,4 +20,4 @@ see [AUTHORS.txt](https://gitlab.com/tobiaskoch/gitlab-ci-example-mono/blob/mast
 Thanks for your interest in this project. You can show your appreciation and support further development by [donating](https://www.tk-software.de/donate).
 
 ## License
-**gitlab-ci-example-mono** © 2018  Tobias Koch. Released under the [MIT License](https://gitlab.com/tobiaskoch/gitlab-ci-example-mono/blob/master/LICENSE.md).
+**gitlab-ci-example-mono** © 2018-2020  Tobias Koch. Released under the [MIT License](https://gitlab.com/tobiaskoch/gitlab-ci-example-mono/blob/master/LICENSE.md).
